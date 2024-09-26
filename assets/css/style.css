@@ -308,7 +308,7 @@ video {
     background: var(--third-color) !important
 }
 #size{
-    margin-left: 30%;
+    margin-left: 30;
 }
 .btn_wt {
     background: #fff;
@@ -323,11 +323,13 @@ video {
 }
 
 .sub_title {
-    font-size: 55px;
+    font-size: 20px;
     color: var(--secondary-color);
     font-weight: 600
 }
-
+#our_product{
+    font-size: 55px;
+}
 .title {
     font-size: 45px;
     color: var(--third-color);
