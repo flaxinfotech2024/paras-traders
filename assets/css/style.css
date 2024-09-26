@@ -4,7 +4,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: mulish, sans-serif;
-    color: var(--text-color)
+    color: var(--text-color);
+    overflow-x: hidden;
 }
 
 :root {
@@ -197,11 +198,64 @@ header::before {
     }
 }
 
-.top_banner {
+/* .top_banner {
     display: flex;
     align-items: center;
     background: linear-gradient(to right, #221e1fe3 50%, #221e1f1f), url(../img/top_banner.webp) no-repeat;
-    background-position: center right
+    background-position: center right;
+    background-size: 100%;
+    object-fit: cover;
+    animation: slide 10s infinite;
+} */
+
+.top_banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #221e1fe3 50%, #221e1f1f), url(../img/top_banner.webp) no-repeat center center;
+    background-size: 100%; 
+    object-fit: cover;
+    animation: slide 10s infinite ease-in-out; 
+    position: relative; 
+    overflow: hidden; 
+}
+
+
+.banner_inner_tax_body {
+    z-index: 2; 
+    position: relative;
+    color: white;
+    text-align: left;
+}
+
+
+@keyframes slide {
+    0% {
+        background: linear-gradient(to right, #221e1fe3 50%, #221e1f1f), url(../img/top_banner.webp) no-repeat center center;
+
+        background-size: 100%; 
+    }
+    50% {
+        background: linear-gradient(to right, #221e1fe3 50%, #221e1f1f), url(../img/DeWatermark.ai_1727195067113.png) no-repeat center center;
+
+        background-size: 110%; 
+    }
+    100% {
+        background: linear-gradient(to right, #221e1fe3 50%, #221e1f1f), url(../img/top_banner.webp) no-repeat center center;
+
+        background-size: 100%; 
+    }
+} 
+
+
+
+video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
 }
 
 .top_banner::before {
@@ -253,7 +307,9 @@ header::before {
     color: var(--btn-color) !important;
     background: var(--third-color) !important
 }
-
+#size{
+    margin-left: 30%;
+}
 .btn_wt {
     background: #fff;
     color: var(--third-color) !important;
@@ -267,7 +323,7 @@ header::before {
 }
 
 .sub_title {
-    font-size: 20px;
+    font-size: 55px;
     color: var(--secondary-color);
     font-weight: 600
 }
@@ -286,10 +342,12 @@ header::before {
     position: relative;
     height: 100%
 }
-.card_01 .card_img img{
+
+.card_01 .card_img img {
     height: 250px;
     width: 100%;
 }
+
 .full_img_card::before {
     display: none
 }
@@ -342,6 +400,10 @@ header::before {
     left: 0
 }
 
+.card_01:hover .know_more {
+    background-color: white;
+}
+
 .product_title,
 .card_title {
     font-size: 24px;
@@ -354,6 +416,26 @@ header::before {
     color: var(--third-color) !important;
     font-weight: 500;
     transition: all .3s ease-in-out
+}
+
+.know_more {
+    background: var(--btn-color);
+    color: var(--third-color) !important;
+    border: 1px solid var(--secondary-color) !important;
+    font-weight: 700;
+    width: 150px;
+    height: 50px;
+    /* margin-top: 20px; */
+}
+
+.know_more:hover {
+    columns: var(--btn-color);
+    background: white;
+}
+
+.btn_yellow:hover {
+    color: var(--btn-color) !important;
+    background: var(--third-color) !important
 }
 
 .link:hover {
@@ -381,6 +463,10 @@ header::before {
 
 .card_02:hover p {
     color: var(--third-color)
+}
+
+.card_02:hover .know_more {
+    background-color: white;
 }
 
 .card_02::before {
@@ -484,11 +570,19 @@ footer {
     background: var(--third-color);
     color: #fff
 }
-.address{
-    margin-left:300px;
+
+.address {
+    margin-left: 300px;
 }
+
+/* .footer_logo {
+    width: 120px;
+} */
 .footer_logo {
-    width: 120px
+    width: 120px;
+    margin-left: -160px;
+    margin-top: -70px;
+    margin-right: 40px;
 }
 
 .footer_title {
@@ -538,7 +632,8 @@ footer {
 }
 
 .social_icon {
-    width: 40px
+    width: 30px;
+    color: #ffd302;
 }
 
 .footer_ico {
@@ -560,6 +655,11 @@ footer {
     color: var(--secondary-color) !important;
     line-height: 0.3;
 }
+
+.contact {
+    margin-top: 0px;
+}
+
 #footer_ico_text1 {
     width: 60px;
     height: 60px;
@@ -568,11 +668,13 @@ footer {
     color: var(--secondary-color) !important;
     line-height: 3.1;
 }
-#footer_ico_text1 span{
+
+#footer_ico_text1 span {
     margin-top: 20px;
 }
+
 .footer_ico_text span {
-    margin-top:30px;
+    margin-top: 30px;
     font-size: 15px;
     font-weight: 500;
     color: transparent
@@ -636,12 +738,17 @@ footer {
 }
 
 .pagetitle {
-    background: linear-gradient(to right, rgb(56, 52, 36), rgb(255, 255, 255, 0%)), url(../img/green_diamond_powder/luxury-shine-diamonds-digital-art.jpg) no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    padding: 100px 0;
-    /* height:500px; */
+    background: linear-gradient(to right, rgba(56, 52, 36, 0.8), rgba(255, 255, 255, 0)),
+        url(../img/WhatsApp\ Image\ 2024-08-30\ at\ 4.17.26\ PM.jpeg) no-repeat center center;
+    background-size: contain;
+    background-size: 100%;
+    background-position: center center;
+    background-attachment: scroll;
+    padding: 130px 0;
+    height: 390px;
+    object-fit: contain;
 }
+
 
 .pagetitle h2 {
     color: var(--secondary-color);
@@ -709,14 +816,25 @@ footer {
     font-size: 13px
 }
 
+.review {
+    margin-left: 35%;
+}
+
 .product_btns {
-    display: grid;
+    /* display: grid; */
     grid-template-columns: 1fr 1fr;
     gap: 1rem
 }
 
 .product_btns .btn_wt {
-    border: 1px solid var(--btn-color)
+    border: 1px solid var(--btn-color);
+    width: 100%;
+}
+
+.product_btns #inquiry_btn {
+    border: 1px solid var(--btn-color);
+    width: 60%;
+    margin-left: 20%;
 }
 
 .product_main_img {
@@ -836,4 +954,8 @@ footer {
 .con_form {
     padding: 2rem;
     background: var(--third-color)
+}
+
+#contact {
+    margin-top: 38%;
 }
