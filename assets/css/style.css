@@ -308,7 +308,7 @@ video {
     background: var(--third-color) !important
 }
 #size{
-    margin-left: 30;
+    margin-left: 30%;
 }
 .btn_wt {
     background: #fff;
