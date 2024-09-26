@@ -570,11 +570,14 @@ video {
 footer {
     padding: 60px 0;
     background: var(--third-color);
-    color: #fff
+    color: #fff;
 }
 
 .address {
-    margin-left: 300px;
+    margin-left: 400px;
+}
+.address1{
+    margin-left: 400px;
 }
 
 /* .footer_logo {
@@ -583,6 +586,7 @@ footer {
 .footer_logo {
     width: 120px;
     margin-left: -160px;
+
     margin-top: -70px;
     margin-right: 40px;
 }
@@ -618,7 +622,22 @@ footer {
     background: var(--third-color);
     animation: footer_title 3s infinite linear
 }
+#use_link{
+    width: 250px;
+    margin-left: 100px;
+}
+#use_link1{
+    width: 278px;
+}
 
+#use_link3{
+    width: 90px;
+    margin-left: 32px;
+    margin-top: -30px;
+}
+#follow{
+    margin-top: -265px;
+}
 @keyframes footer_title {
     0% {
         left: 70px
@@ -746,8 +765,8 @@ footer {
     background-size: 100%;
     background-position: center center;
     background-attachment: scroll;
-    padding: 130px 0;
-    height: 390px;
+    padding: 120px 0;
+    height: 360px;
     object-fit: contain;
 }
 
