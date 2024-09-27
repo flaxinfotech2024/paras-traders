@@ -974,9 +974,10 @@ footer {
 
 .con_form {
     padding: 2rem;
-    background: var(--third-color)
+    background: var(--third-color);
+    height: auto;
 }
 
 #contact {
-    margin-top: 38%;
+    margin-top: 35%;
 }
