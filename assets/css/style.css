@@ -62,7 +62,7 @@ header::before {
 }
 
 .header_logo {
-    width: 70px
+    width: 110px;
 }
 
 .navbar-toggler {
@@ -572,23 +572,33 @@ footer {
     background: var(--third-color);
     color: #fff;
 }
-
+.about_company{
+    margin-left: 80px;
+    width: 252px;
+}
 .address {
-    margin-left: 400px;
+    margin-left: 540px;
+    margin-top: -325px;
 }
 .address1{
-    margin-left: 400px;
+    margin-left: 512px;
+    margin-top: -325px;
+    width: 200px;
 }
-
+.quick_links{
+    margin-left: 473px;
+    width: 200px;
+    margin-top: -325px;
+}
 /* .footer_logo {
     width: 120px;
 } */
 .footer_logo {
-    width: 120px;
-    margin-left: -160px;
+    width: 170px !important;
+    margin-left: -60px;
 
-    margin-top: -70px;
-    margin-right: 40px;
+    margin-top: 35px;
+    /* margin-right: 40px; */
 }
 
 .footer_title {
