@@ -62,7 +62,8 @@ header::before {
 }
 
 .header_logo {
-    width: 110px;
+    /* width: 110px; */
+    width: 150px;
 }
 
 .navbar-toggler {
