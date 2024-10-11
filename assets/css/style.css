@@ -213,12 +213,14 @@ header::before {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to right, #221e1fe3 50%, #221e1f1f), url(../img/top_banner.webp) no-repeat center center;
-    background-size: 100%; 
+    /* background: linear-gradient(to right, #221e1fe3 50%, #221e1f1f), url(../img/WhatsApp\ Image\ 2024-08-30\ at\ 4.17.26\ PM.jpeg) no-repeat center center; */
+    background: linear-gradient(to right, #212401b5 40%, #50532c1f), url(../img/WhatsApp\ Image\ 2024-10-10\ at\ 3.27.49\ PM.jpeg) no-repeat center center;
+    background-size: cover; 
     object-fit: cover;
-    animation: slide 10s infinite ease-in-out; 
+    /* animation: slide 10s infinite ease-in-out;  */
     position: relative; 
     overflow: hidden; 
+    height: aut;
 }
 
 
@@ -230,7 +232,7 @@ header::before {
 }
 
 
-@keyframes slide {
+/* @keyframes slide {
     0% {
         background: linear-gradient(to right, #221e1fe3 50%, #221e1f1f), url(../img/top_banner.webp) no-repeat center center;
 
@@ -246,7 +248,7 @@ header::before {
 
         background-size: 100%; 
     }
-} 
+}  */
 
 
 
@@ -771,13 +773,13 @@ footer {
 
 .pagetitle {
     background: linear-gradient(to right, rgba(56, 52, 36, 0.8), rgba(255, 255, 255, 0)),
-        url(../img/WhatsApp\ Image\ 2024-08-30\ at\ 4.17.26\ PM.jpeg) no-repeat center center;
+        url(../img/WhatsApp\ Image\ 2024-10-10\ at\ 3.27.49\ PM.jpeg) no-repeat center center;
     background-size: contain;
     background-size: 100%;
     background-position: center center;
     background-attachment: scroll;
     padding: 120px 0;
-    height: 360px;
+    height: 390px;
     object-fit: contain;
 }
 
@@ -948,7 +950,7 @@ footer {
     border: 1px solid var(--secondary-color)
 }
 
-.con_page_rech {
+/* .con_page_rech {
     background: linear-gradient(to bottom, rgb(56, 52, 36, 80%) 50%, rgb(255, 255, 255, 0%)), url(../img/page_title_bg.webp) no-repeat;
     background-size: cover;
     height: 100%;
@@ -956,8 +958,23 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between
-}
+} */
 
+.con_page_rech {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: linear-gradient(to right, #221e1fe3 50%, #221e1f1f), url(../img/WhatsApp\ Image\ 2024-08-30\ at\ 4.17.26\ PM.jpeg) no-repeat center center; */
+    background: linear-gradient(to bottom, rgb(56, 52, 36, 80%) 50%, rgb(255, 255, 255, 0%)), url(../img/WhatsApp\ Image\ 2024-10-10\ at\ 3.27.49\ PM.jpeg) no-repeat center center;
+    background-size: cover; 
+    object-fit: cover;
+    /* animation: slide 10s infinite ease-in-out;  */
+    position: relative; 
+    padding: 35px;
+    overflow: hidden; 
+    height: 100%;
+    width: 101%;
+}
 .con_page_rech .title {
     font-size: 32px;
     margin-bottom: 0
