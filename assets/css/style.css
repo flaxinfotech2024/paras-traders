@@ -214,13 +214,13 @@ header::before {
     align-items: center;
     justify-content: center;
     /* background: linear-gradient(to right, #221e1fe3 50%, #221e1f1f), url(../img/WhatsApp\ Image\ 2024-08-30\ at\ 4.17.26\ PM.jpeg) no-repeat center center; */
-    background: linear-gradient(to right, #212401b5 40%, #50532c1f), url(../img/WhatsApp\ Image\ 2024-10-10\ at\ 3.27.49\ PM.jpeg) no-repeat center center;
+    background: url(../img/WhatsApp\ Image\ 2024-10-10\ at\ 3.27.49\ PM.jpeg) no-repeat center center;
     background-size: cover; 
     object-fit: cover;
     /* animation: slide 10s infinite ease-in-out;  */
     position: relative; 
     overflow: hidden; 
-    height: aut;
+    height: auto;
 }
 
 
@@ -527,12 +527,14 @@ video {
 }
 
 .big_card {
-    background: linear-gradient(to right, #000000b4, #47422d2c), url(../img/big-card-bg.webp) no-repeat;
+    background: linear-gradient(to right, #000000b4, #47422d2c), url(../img/big-card.jpg) no-repeat;
     padding: 5rem;
     color: #fff;
     border-radius: 20px;
     overflow: hidden;
-    animation: big_card 3s linear infinite
+    background-size: 100%;
+    object-fit: cover;
+    /* animation: big_card 3s linear infinite; */
 }
 
 @keyframes big_card {
@@ -574,6 +576,7 @@ footer {
     padding: 60px 0;
     background: var(--third-color);
     color: #fff;
+    height: 350px;
 }
 .about_company{
     margin-left: 80px;
@@ -772,8 +775,8 @@ footer {
 }
 
 .pagetitle {
-    background: linear-gradient(to right, rgba(56, 52, 36, 0.8), rgba(255, 255, 255, 0)),
-        url(../img/WhatsApp\ Image\ 2024-10-10\ at\ 3.27.49\ PM.jpeg) no-repeat center center;
+    /* background: linear-gradient(to right, rgba(56, 52, 36, 0.8), rgba(255, 255, 255, 0)),url(../img/WhatsApp\ Image\ 2024-10-10\ at\ 3.27.49\ PM.jpeg) no-repeat center center; */
+    background: url(../img/WhatsApp\ Image\ 2024-10-10\ at\ 3.27.49\ PM.jpeg) no-repeat center center;
     background-size: contain;
     background-size: 100%;
     background-position: center center;
@@ -964,8 +967,8 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background: linear-gradient(to right, #221e1fe3 50%, #221e1f1f), url(../img/WhatsApp\ Image\ 2024-08-30\ at\ 4.17.26\ PM.jpeg) no-repeat center center; */
-    background: linear-gradient(to bottom, rgb(56, 52, 36, 80%) 50%, rgb(255, 255, 255, 0%)), url(../img/WhatsApp\ Image\ 2024-10-10\ at\ 3.27.49\ PM.jpeg) no-repeat center center;
+    /* background: linear-gradient(to bottom, rgb(56, 52, 36, 80%) 50%, rgb(255, 255, 255, 0%)), url(../img/WhatsApp\ Image\ 2024-10-10\ at\ 3.27.49\ PM.jpeg) no-repeat center center; */
+    background: url(../img/WhatsApp\ Image\ 2024-10-10\ at\ 3.27.49\ PM.jpeg) no-repeat center center;
     background-size: cover; 
     object-fit: cover;
     /* animation: slide 10s infinite ease-in-out;  */
