@@ -284,9 +284,9 @@ video {
 }
 
 .banner_inner_tax_body h1 {
-    color: var(--secondary-color);
+    color: #fff;
     font-size: 60px;
-    font-weight: 700
+    font-weight: 900;
 }
 
 .banner_inner_tax_body p {
@@ -348,9 +348,10 @@ video {
     height: 100%
 }
 
-.card_01 .card_img img {
-    height: 250px;
+.card_01  img {
+    height:350px;
     width: 100%;
+    
 }
 
 .full_img_card::before {
