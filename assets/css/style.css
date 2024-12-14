@@ -348,6 +348,7 @@ video {
     height: 100%
 }
 
+
 .card_01  img {
     height:350px;
     width: 100%;
@@ -433,7 +434,18 @@ video {
     height: 50px;
     /* margin-top: 20px; */
 }
-
+#green-know-more{
+    margin-top: 70px;
+}
+#micron-know-more{
+    margin-top: 70px !important;
+}
+#saran-know-more{
+    margin-top: 40px !important;
+}
+#wheel-know-more{
+    margin-top: 90px !important;
+}
 .know_more:hover {
     columns: var(--btn-color);
     background: white;
@@ -535,6 +547,7 @@ video {
     overflow: hidden;
     background-size: 100%;
     object-fit: cover;
+    margin-bottom: 110px;
     /* animation: big_card 3s linear infinite; */
 }
 
