@@ -180,3 +180,71 @@
         grid-template-columns: 1fr
     }
 }
+
+@media(max-width: 991px) {
+    #about_us img {
+        margin-left: -30px;
+    }
+
+    #counter {
+        margin-left: 30px !important;
+    }
+
+    .big_card {
+        /* background-color: #000000; */
+        background: center, url(../img/big-card.jpg);
+    }
+
+    #quick_links {
+        display: block;
+        margin-top: 70%;
+        margin-left: -470px;
+    }
+
+    .footer_menu {
+        margin-left: -70px;
+    }
+
+    .address1 {
+        margin-top: 105%;
+        margin-left: 180px;
+    }
+
+    .contact {
+        margin-left: -70px;
+    }
+
+    #address {
+        margin-left: 80px;
+        margin-top: -50px;
+    }
+
+    .footer_link {
+        margin-left: -70px;
+    }
+
+    .footer_logo {
+        margin-left: 30px;
+    }
+
+    .about_company p {
+        margin-top: 10px;
+        margin-left: -70px !important;
+        width: 120%;
+    }
+
+    .footer_title {
+        margin-left: -70px;
+    }
+
+    .copy_flex p {
+        margin-top: 220%;
+        margin-left: -20px;
+    }
+
+    .pagetitle {
+        background: url(../img/WhatsApp\ Image\ 2024-10-10\ at\ 3.27.49\ PM.jpeg);
+        background-size: cover;
+        background-position: center center;
+    }
+}

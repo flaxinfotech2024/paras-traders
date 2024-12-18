@@ -215,17 +215,17 @@ header::before {
     justify-content: center;
     /* background: linear-gradient(to right, #221e1fe3 50%, #221e1f1f), url(../img/WhatsApp\ Image\ 2024-08-30\ at\ 4.17.26\ PM.jpeg) no-repeat center center; */
     background: url(../img/WhatsApp\ Image\ 2024-10-10\ at\ 3.27.49\ PM.jpeg) no-repeat center center;
-    background-size: cover; 
+    background-size: cover;
     object-fit: cover;
     /* animation: slide 10s infinite ease-in-out;  */
-    position: relative; 
-    overflow: hidden; 
+    position: relative;
+    overflow: hidden;
     height: auto;
 }
 
 
 .banner_inner_tax_body {
-    z-index: 2; 
+    z-index: 2;
     position: relative;
     color: white;
     text-align: left;
@@ -310,9 +310,11 @@ video {
     color: var(--btn-color) !important;
     background: var(--third-color) !important
 }
-#size{
+
+#size {
     margin-left: 30%;
 }
+
 .btn_wt {
     background: #fff;
     color: var(--third-color) !important;
@@ -330,17 +332,21 @@ video {
     color: var(--secondary-color);
     font-weight: 600
 }
-#about_us{
+
+#about_us {
     margin-right: 30px;
 }
-#about_us img{
+
+#about_us img {
     height: 530px;
 }
 
-#counter{
+#counter {
     margin-left: 120px;
 }
-#our_product{
+
+
+#our_product {
     font-size: 55px;
 }
 
@@ -360,10 +366,10 @@ video {
 }
 
 
-.card_01  img {
-    height:350px;
+.card_01 img {
+    height: 350px;
     width: 100%;
-    
+
 }
 
 .full_img_card::before {
@@ -445,18 +451,23 @@ video {
     height: 50px;
     /* margin-top: 20px; */
 }
-#green-know-more{
+
+#green-know-more {
     margin-top: 70px;
 }
-#micron-know-more{
+
+#micron-know-more {
     margin-top: 70px !important;
 }
-#saran-know-more{
+
+#saran-know-more {
     margin-top: 40px !important;
 }
-#wheel-know-more{
+
+#wheel-know-more {
     margin-top: 90px !important;
 }
+
 .know_more:hover {
     columns: var(--btn-color);
     background: white;
@@ -487,7 +498,8 @@ video {
     border-radius: 18px;
     overflow: hidden;
     padding: 2.5rem;
-    position: relative
+    position: relative;
+    height: 500px;
 }
 
 .card_02:hover p {
@@ -562,6 +574,7 @@ video {
     /* animation: big_card 3s linear infinite; */
 }
 
+
 @keyframes big_card {
     0% {
         background-position: 0% 0%
@@ -603,24 +616,29 @@ footer {
     color: #fff;
     height: 350px;
 }
-.about_company{
+
+.about_company {
     margin-left: 80px;
     width: 252px;
 }
+
 .address {
     margin-left: 540px;
     margin-top: -325px;
 }
-.address1{
+
+.address1 {
     margin-left: 512px;
     margin-top: -325px;
     width: 200px;
 }
-.quick_links{
+
+.quick_links {
     margin-left: 550px;
     width: 200px;
     margin-top: -325px;
 }
+
 /* .footer_logo {
     width: 120px;
 } */
@@ -663,22 +681,26 @@ footer {
     background: var(--third-color);
     animation: footer_title 3s infinite linear
 }
-#use_link{
+
+#use_link {
     width: 250px;
     margin-left: 100px;
 }
-#use_link1{
+
+#use_link1 {
     width: 278px;
 }
 
-#use_link3{
+#use_link3 {
     width: 90px;
     margin-left: 32px;
     margin-top: -30px;
 }
-#follow{
+
+#follow {
     margin-top: -265px;
 }
+
 @keyframes footer_title {
     0% {
         left: 70px
@@ -810,7 +832,6 @@ footer {
     height: 390px;
     object-fit: contain;
 }
-
 
 .pagetitle h2 {
     color: var(--secondary-color);
@@ -994,15 +1015,16 @@ footer {
     justify-content: center;
     /* background: linear-gradient(to bottom, rgb(56, 52, 36, 80%) 50%, rgb(255, 255, 255, 0%)), url(../img/WhatsApp\ Image\ 2024-10-10\ at\ 3.27.49\ PM.jpeg) no-repeat center center; */
     background: url(../img/WhatsApp\ Image\ 2024-10-10\ at\ 3.27.49\ PM.jpeg) no-repeat center center;
-    background-size: cover; 
+    background-size: cover;
     object-fit: cover;
     /* animation: slide 10s infinite ease-in-out;  */
-    position: relative; 
+    position: relative;
     padding: 35px;
-    overflow: hidden; 
+    overflow: hidden;
     height: 100%;
     width: 101%;
 }
+
 .con_page_rech .title {
     font-size: 32px;
     margin-bottom: 0
@@ -1034,6 +1056,13 @@ footer {
     height: auto;
 }
 
+
 #contact {
     margin-top: 35%;
+}
+
+@media(max-width:991px) {
+    .con_form iframe {
+        width: 100%;
+    }
 }

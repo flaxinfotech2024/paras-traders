@@ -291,10 +291,10 @@
                             market.</p>
                     </div>
                 </div>
-                <div class="col-xl-9 ps-xl-5">
+                <div class="col-xl-9  ps-xl-5">
 
                     <div class="row g-4" data-aos="fade-up" data-aos-duration="2000">
-                        <div class=" col-md-3">
+                        <div class="col-md-3" id="quick_links">
                             <div class="quick_links">
                                 <div class="footer_title">Quick Links</div>
                                 <ul class="footer_menu">
@@ -326,16 +326,21 @@
                         <div class="col-xl-5 col-md-3  d-flex justify-content-between">
 
 
-                            <div class="address">
+                            <div class="address" id="address">
                                 <div class="footer_title">Contact Us</div>
                                 <p class="footer_menu">Shop number 15/16,<br>
                                     Municipal shopping center,<br>
                                     Nirmalnagar,
                                     Bhavnagar, 364001</p>
-                                <p><i class="bi bi-telephone"></i>&nbsp;&nbsp;&nbsp;+91
-                                    9824041001</p>
-                                <p class="d-flex"><i
-                                        class="bi bi-envelope-open"></i>&nbsp;&nbsp;&nbsp;Parastradersco@gmail.com</p>
+                                    <a href="tel:+919824041001" class="text-light">
+                                        <p><i class="bi bi-telephone footer_link"></i>&nbsp;&nbsp;&nbsp;+91
+                                            9824041001</p>
+                                    </a>
+                                    <p class="d-flex">
+                                        <i class="bi bi-envelope-open"></i>&nbsp;&nbsp;&nbsp;
+                                        <a href="mailto:Parastradersco@gmail.com" class="text-light">Parastradersco@gmail.com</a>
+                                      </p>
+    
 
                             </div>
 
@@ -362,7 +367,11 @@
     <script src="assets/js/custome.js"></script>
     <script src="assets/js/aos.js"></script>
     <script>
-        AOS.init();
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 120,
+        });
     </script>
 </body>
 
