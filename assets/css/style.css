@@ -831,6 +831,7 @@ footer {
     padding: 120px 0;
     height: 390px;
     object-fit: contain;
+    margin-top: -17px;
 }
 
 .pagetitle h2 {

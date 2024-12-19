@@ -203,6 +203,7 @@
 
     .footer_menu {
         margin-left: -70px;
+        width: 100%;
     }
 
     .address1 {
@@ -235,10 +236,11 @@
 
     .footer_title {
         margin-left: -70px;
+        width: 100%;
     }
 
     .copy_flex p {
-        margin-top: 220%;
+        margin-top: 230%;
         margin-left: -20px;
     }
 
