@@ -154,9 +154,13 @@
     .footer_ico_text {
         font-size: 18px
     }
+    .address1 {
+        margin-top: 102%;
+        margin-left: 125px;
+    }
 }
 
-@media screen and (max-width:375px) {
+@media screen and (max-width:380px) {
 
     .product_title,
     .card_title {
@@ -178,6 +182,10 @@
 
     .product_btns {
         grid-template-columns: 1fr
+    }
+    .address1 {
+        margin-top: 106%;
+        margin-left: 175px;
     }
 }
 
@@ -207,10 +215,10 @@
         width: 100%;
     }
 
-    .address1 {
+    /* .address1 {
         margin-top: 106%;
         margin-left: 175px;
-    }
+    } */
 
     .contact {
         margin-left: -70px;
