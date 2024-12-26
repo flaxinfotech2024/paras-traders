@@ -184,6 +184,7 @@
 @media(max-width: 991px) {
     #about_us img {
         margin-left: -30px;
+        height: 100%;
     }
 
     #counter {
@@ -208,7 +209,7 @@
 
     .address1 {
         margin-top: 106%;
-        margin-left: 192px;
+        margin-left: 175px;
     }
 
     .contact {
