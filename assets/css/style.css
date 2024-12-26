@@ -22,6 +22,14 @@ a {
     text-decoration: none
 }
 
+.writing{
+    font-size: 17px;
+    color:black;
+}
+.writing-1{
+    font-size: 17px;
+  }
+
 .text-yellow {
     color: var(--secondary-color) !important
 }
@@ -35,7 +43,7 @@ img {
 }
 
 .mtb-100 {
-    margin-top: 100px;
+    margin-top: 50px;
     margin-bottom: 100px
 }
 
@@ -62,8 +70,11 @@ header::before {
 }
 
 .header_logo {
-    /* width: 110px; */
-    width: 170px;
+    width: 100px;
+}
+
+.hitech_logo {
+width: 75px;
 }
 
 .navbar-toggler {
@@ -121,7 +132,7 @@ header::before {
 .btn {
     color: #fff !important;
     border-radius: 0;
-    padding: 8px 20px;
+    padding: 8px 5px;
     font-weight: 600;
     transition: all .3s ease-in-out !important
 }
@@ -278,20 +289,24 @@ video {
 }
 
 .banner_inner_tax_body h5 {
-    color: #fff;
+    color: #EAC31F;
     font-size: 30px;
-    font-weight: 600
+    font-weight: 600;
+    /* text-shadow: 2px 2px 10px #414141; */
 }
 
 .banner_inner_tax_body h1 {
-    color: #fff;
+    color:  #EAC31F;
     font-size: 60px;
     font-weight: 900;
+    /* text-shadow: 2px 2px 10px #8e8e8ecf; */
 }
 
 .banner_inner_tax_body p {
     color: #fff;
-    font-weight: 600
+    font-weight: 600;
+    text-shadow: 2px 2px 5px #000000;
+    font-size: 17px
 }
 
 .btn_yellow {
@@ -329,7 +344,7 @@ video {
 
 .sub_title {
     font-size: 20px;
-    color: var(--secondary-color);
+    color: #EAC31F;
     font-weight: 600
 }
 
@@ -339,6 +354,7 @@ video {
 
 #about_us img {
     height: 530px;
+    
 }
 
 #counter {
@@ -717,7 +733,7 @@ footer {
 
 .social_icon {
     width: 30px;
-    color: #ffd302;
+    /* color: #ffd302; */
 }
 
 .footer_ico {
@@ -767,7 +783,7 @@ footer {
 .footer_menu {
     list-style: none;
     padding: 0;
-    width: 300%;
+    width: 100%;
 }
 
 .footer_menu a {
@@ -835,10 +851,12 @@ footer {
 }
 
 .pagetitle h2 {
-    color: var(--secondary-color);
+    color: #EAC31F ;
     font-size: 3rem;
     font-weight: 700;
-    margin-bottom: 1rem
+    margin-bottom: 1rem;
+    /* text-shadow: 2px 2px 10px #414141; */
+
 }
 
 .back_menu a {
@@ -1014,8 +1032,8 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background: linear-gradient(to bottom, rgb(56, 52, 36, 80%) 50%, rgb(255, 255, 255, 0%)), url(../img/WhatsApp\ Image\ 2024-10-10\ at\ 3.27.49\ PM.jpeg) no-repeat center center; */
-    background: url(../img/WhatsApp\ Image\ 2024-10-10\ at\ 3.27.49\ PM.jpeg) no-repeat center center;
+    background: linear-gradient(to bottom, rgb(56, 52, 36, 80%) 50%, rgb(255, 255, 255, 0%)), url(../img/contact-us-img.jpg) no-repeat center center;
+    /* background: url(../img/contact-us-img.jpg) no-repeat center center; */
     background-size: cover;
     object-fit: cover;
     /* animation: slide 10s infinite ease-in-out;  */
@@ -1023,7 +1041,7 @@ footer {
     padding: 35px;
     overflow: hidden;
     height: 100%;
-    width: 101%;
+    width: 100%;
 }
 
 .con_page_rech .title {
@@ -1048,7 +1066,8 @@ footer {
 .footer_box_title {
     color: var(--btn-color);
     font-weight: 500;
-    margin-bottom: 4px
+    /* margin-bottom: 4px; */
+    /* text-shadow: 5px 5px 10px #000000; */
 }
 
 .con_form {
@@ -1060,10 +1079,21 @@ footer {
 
 #contact {
     margin-top: 35%;
+
 }
 
 @media(max-width:991px) {
     .con_form iframe {
         width: 100%;
     }
+}
+
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.table {
+    width: 100%;
+    max-width: 100%;
 }
