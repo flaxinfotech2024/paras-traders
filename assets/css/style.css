@@ -636,35 +636,33 @@ footer {
 }
 
 .about_company {
-    margin-left: 80px;
+    margin-left: 30px;
     width: 252px;
 }
-
+.quick_links{
+    margin-left:50px;
+}
 .address {
-    margin-left: 540px;
-    margin-top: -325px;
+    margin-left: 70px;
+    width: 450px;
 }
 
 .address1 {
-    margin-left: 512px;
-    margin-top: -325px;
-    width: 200px;
+    margin-left: 50px;
 }
 
-.quick_links {
+/* .quick_links {
     margin-left: 550px;
     width: 200px;
     margin-top: -325px;
-}
-
-/* .footer_logo {
-    width: 120px;
 } */
+
+
 .footer_logo {
     width: 250px !important;
     margin-left: -60px;
 
-    margin-top: 35px;
+    margin-top: 25px;
     /* margin-right: 40px; */
 }
 
@@ -675,7 +673,7 @@ footer {
     margin-bottom: .8rem;
     position: relative;
     color: var(--secondary-color);
-    width: 100%;
+    /* width: 100%; */
 }
 
 
@@ -715,9 +713,9 @@ footer {
     margin-top: -30px;
 }
 
-#follow {
+/* #follow {
     margin-top: -265px;
-}
+} */
 
 @keyframes footer_title {
     0% {
@@ -732,6 +730,39 @@ footer {
         left: 70px
     }
 }
+
+/* General fade-up animation */
+.fade-up {
+    opacity: 0;
+    transform: translateY(20px); /* Start slightly below */
+    animation: fadeUpEffect 1s ease-out forwards;
+  }
+  
+  /* Animation keyframes */
+  @keyframes fadeUpEffect {
+    0% {
+      opacity: 0;
+      transform: translateY(20px); /* Start below the element's final position */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); /* End at its normal position */
+    }
+  }
+  
+  /* Adding delays for specific elements */
+  .fade-up-delay-200 {
+    animation-delay: 200ms;
+  }
+  
+  .fade-up-delay-400 {
+    animation-delay: 400ms;
+  }
+  
+  .fade-up-delay-600 {
+    animation-delay: 600ms;
+  }
+  
 
 .social_icon {
     width: 30px;
@@ -758,9 +789,9 @@ footer {
     line-height: 0.3;
 }
 
-.contact {
+/* .contact {
     margin-top: 0px;
-}
+} */
 
 #footer_ico_text1 {
     width: 60px;
@@ -785,7 +816,7 @@ footer {
 .footer_menu {
     list-style: none;
     padding: 0;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .footer_menu a {
