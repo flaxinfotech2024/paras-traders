@@ -555,7 +555,11 @@
         background: url(../img/WhatsApp\ Image\ 2024-10-10\ at\ 3.27.49\ PM.jpeg) no-repeat center center;
         background-size: cover;
         width: 106%;
+        height: auto;
     }
+  .top_banner{
+    width: 106%;
+  }
     #about_us img{
         height: 350px;
         margin-top: -20px;
